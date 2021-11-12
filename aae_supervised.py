@@ -215,7 +215,7 @@ for epoch in range(1, args.n_epochs+1):
         validity_fake_z = discriminator(fake_z)
 
         G_loss = 0.005*adversarial_loss(validity_fake_z, valid) \
-                    + 0.9995*reconstruction_loss(decoded_x, x)
+                    + 0.995*reconstruction_loss(decoded_x, x)
         G_loss.backward()
         optimizer_G.step()
 
