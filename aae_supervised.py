@@ -115,7 +115,7 @@ class Discriminator(nn.Module):
 #######################################################
 
 # data
-train_labeled_loader = load_data('data/')[1]
+train_labeled_loader = load_data('data/')[0]
 
 # define model
 # 1) generator
