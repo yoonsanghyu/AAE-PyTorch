@@ -22,6 +22,7 @@ or
 $ python aae_supervised.py
 ```
 You can get category conditional images like below,
+
 ![image](https://user-images.githubusercontent.com/51259168/143195813-82ef4186-7718-46dc-8b17-786f63d33830.png)
 
 
