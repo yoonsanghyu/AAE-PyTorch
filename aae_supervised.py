@@ -167,12 +167,6 @@ def sample_image(n_row, epoch, img_dir):
                 nrow = n_row, normalize = True)
 
 def sample_image_cat(n_row, epoch, img_dir):
-    # z = Variable(Tensor(np.random.normal(0, 1, (n_row**2, args.latent_dim))))
-    # z_cat = Tensor([0,1,2,3,4,5,6,7,8,9]).repeat*(n_row, 1)
-    # print(z_cat.shape, z_cat)
-    # z_cat = z_cat.repeat(n_row**2, 1)
-    # z = torch.cat([z_cat, z], dim=1)
-
     # form latent vector
     z = Variable(Tensor(np.random.normal(0, 1, (n_row**2, args.latent_dim))))
     # form categorical value
@@ -182,9 +176,6 @@ def sample_image_cat(n_row, epoch, img_dir):
     
     z = torch.cat([z_cat, z], dim=1)
 
-    decoder.eval()
-    with torch.no_grad():
-        generated_imgs = decoder(z)
     decoder.eval()
     with torch.no_grad():
         generated_imgs = decoder(z)
