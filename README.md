@@ -22,9 +22,7 @@ or
 $ python aae_supervised.py
 ```
 You can get category conditional images like below,
-![image](https://user-images.githubusercontent.com/51259168/143198299-f0c87643-998e-4949-95f9-3c38be746091.png){: width="100" height="100"}
-
-or
+<img src="https://user-images.githubusercontent.com/51259168/143198299-f0c87643-998e-4949-95f9-3c38be746091.png" width="100" height="100"/>
 
 
 ```bash
