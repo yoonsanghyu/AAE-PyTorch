@@ -27,6 +27,8 @@ You can get category conditional images like below,
 
 <img src="https://user-images.githubusercontent.com/51259168/143198299-f0c87643-998e-4949-95f9-3c38be746091.png" width="300" height="300"/>
 
+or
+
 
 ```bash
 $ python aae_semi_supervised.py
